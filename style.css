@@ -22,16 +22,17 @@ header{
     padding: 50px 15px;
 }
 
-header form{
-    width: 100%;
-    max-width: 300px;
-    transition: 0.2s ease-in-out;
-}
-
-form input{
-    width: 100%;
+header input{
+    width: 20rem;
+    height: 2rem;
     outline: none;
     border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+}
+
+header input:hover{
+    background-color: white;
 }
 
 main{

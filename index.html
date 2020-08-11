@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 
@@ -15,21 +16,22 @@
 <body>
     <div class="app-wrap">
         <header>
-            <form action="" class="form-control">
-                <input type="text" name="search-box" id="search-box" placeholder="City">
-            </form>
+            <input type="text" name="search-box" class="search-box" placeholder="City">
         </header>
 
         <main>
             <section class="location">
-                <div class="city">DHAKA</div>
-                <div class="date">Tuesday, 11 August 2020</div>
+                <div class="city"></div>
+                <div class="date"></div>
             </section>
 
             <section class="current">
-                <div class="temp">30<span>°C</span></div>
-                <div class="weather">Cloudy</div>
-                <div class="high-low">27°C/32°C</div>
+                <div class="temp"></div>
+                <div class="weather"></div>
+                <div class="high-low">
+                    <span id="min-temp"></span>°<span class="unit">C</span>/
+                    <span id="max-temp"></span>°<span class="unit">C</span>
+                </div>
             </section>
         </main>
     </div>
