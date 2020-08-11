@@ -42,6 +42,10 @@ searchBox.addEventListener('keypress', (event) => {
     }
 });
 
+document.querySelector('.submit-btn').addEventListener("click", () => {
+    getResult(searchBox.value);
+});
+
 function getResult(cityName) {
     const url = `${api.baseurl}q=${cityName}&units=metric&appid=${api.key}`;
     fetch(url)

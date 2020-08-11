@@ -28,11 +28,30 @@ header input{
     outline: none;
     border: none;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
+    border-radius: 5px 0 0px 5px;
 }
 
 header input:hover{
     background-color: white;
+}
+
+header button {
+    font-size: 15px;
+    width: 60px;
+    padding: 5px 2px;
+    margin-left: 4px;
+    border: 0 !important;
+    outline: none;
+    background-color: rgba(19, 162, 189, 0.9);
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    border-bottom: 3px solid #13a2bd;
+    font-weight: 300;
+    border: none;
+}
+
+header button:hover {
+    background-color: rgba(19, 162, 189, 1);
 }
 
 main{
