@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
 
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!--Project CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
-    
-    <h1>Hello everybody</h1>
+    <div class="app-wrap">
+        <header>
+            <form action="" class="form-control">
+                <input type="text" name="search-box" id="search-box" placeholder="City">
+            </form>
+        </header>
+
+        <main>
+            <section class="location">
+                <div class="city">DHAKA</div>
+                <div class="date">Tuesday, 11 August 2020</div>
+            </section>
+
+            <section class="current">
+                <div class="temp">30<span>°C</span></div>
+                <div class="weather">Cloudy</div>
+                <div class="high-low">27°C/32°C</div>
+            </section>
+        </main>
+    </div>
+
+
 
     <!--Bootstrap JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
